@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unites",
+  "info": {
+    "singularName": "unite",
+    "pluralName": "unites",
+    "displayName": "Unités"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "armee": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::armee.armee"
+    }
+  }
+}

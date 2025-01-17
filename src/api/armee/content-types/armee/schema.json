@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "armees",
+  "info": {
+    "singularName": "armee",
+    "pluralName": "armees",
+    "displayName": "Armée "
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
